@@ -265,7 +265,7 @@ public class RandomGraphGenerator {
       String s = "";
       for (int i = 0; i < edges; i++) {
         int rowId = rand.nextInt(maxId);
-        s += Long.toString(rowId) + ":" + rand.nextInt(100) + "\t";
+        s += Long.toString(rowId) +"\t";
       }
 
       context.getCounter(GraphCounter.VERTICES).increment(1L);
